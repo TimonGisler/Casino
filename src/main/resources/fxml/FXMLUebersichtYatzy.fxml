@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" onMouseMoved="#Konto" prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Yatzy.FXMLUebersichtYatzyController">
+   <children>
+      <Label layoutX="628.0" layoutY="273.0" text="Yatzy" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="64.0" />
+         </font></Label>
+      <Label fx:id="kontostand" layoutX="82.0" layoutY="124.0" text="Kontostand:" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font></Label>
+      <Button fx:id="btnPlayGame" layoutX="595.0" layoutY="393.0" mnemonicParsing="false" onAction="#actionPlayGame" text="Play Game">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="625.0" layoutY="518.0" mnemonicParsing="false" onAction="#actionGoBack" text="Zurück">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

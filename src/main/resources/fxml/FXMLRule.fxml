@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="aphome" prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BlackJack.FXMLRuleController">
+   <children>
+      <ImageView fx:id="ruleBack" fitHeight="900.0" fitWidth="1500.0" layoutX="3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="titel" layoutX="653.0" layoutY="29.0" text="Regeln" textFill="WHITE">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="ziel" layoutX="103.0" layoutY="184.0" text="Ziel:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="zielBesch" layoutX="103.0" layoutY="231.0" text="Das Ziel des Spiels ist es mit den gezogenen Karten möglichst nahe an den Wert 21 zu kommen ohne diesen zu überschreiten. Ausserdem muss der Spieler achten dass&#10;sein Kartenwert höher ist als der des Groupiers. Jede Runde entscheidet der Spieler ob er eine weitere Karte ziehen will oder ob er aufhört. Sobald sich der Spieler entschieden&#10;hat keine Karte mehr zu ziehen, zieht der Groupier so lange Karten bis er den Mindestwert 17 erreicht hat." textFill="WHITE" />
+      <Label fx:id="kartenwerte" layoutX="103.0" layoutY="345.0" text="Kartenwerte:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="kartenwerteBesch" layoutX="103.0" layoutY="391.0" text="Die Werte der Karten entsprechen jeweils den darauf abgebildeten Zahlen. Bube, Dame und König haben den Wert 10. Ein Ass kann den Wert 11 oder 1 haben." textFill="WHITE" />
+      <Label fx:id="blackJack" layoutX="103.0" layoutY="466.0" text="Black Jack:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="blackJackBesch" layoutX="103.0" layoutY="513.0" text="Ein Black Jack erhält man wenn die ersten zwei Karten die gezogen werden zusammen den Wert 21 haben. Black Jack schlägt alle anderen Karten kombinationen." textFill="WHITE" />
+      <Label fx:id="versichern" layoutX="103.0" layoutY="591.0" text="Versichern:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="versichernBesch" layoutX="103.0" layoutY="635.0" text="Wenn der Groupier als erste Karte ein Ass zieht hat der Spieler die Möglichkeit einen Betrag zu versichern. Hat der Groupier ein Black Jack bekommt der Spieler den Betrag 2:1 zurück.&#10;Hat der Groupier kein Black Jack geht der Betrag verloren." textFill="WHITE" />
+      <Label fx:id="verdoppeln" layoutX="103.0" layoutY="733.0" text="Verdoppeln:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="verdoppelnBesch" layoutX="103.0" layoutY="779.0" text="Ist der Wert der ersten zwei gezogenen Karten zusammen 9, 10 oder 11 kann der Spieler den Einsatz verdoppeln. Darauf kann nur noch eine weitere Karte gezogen werden." textFill="WHITE" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Menu" />
+   </children>
+</AnchorPane>

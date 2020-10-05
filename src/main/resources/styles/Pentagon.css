@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 22, 2020, 10:29:21 PM
+    Author     : timon
+*/
+
+.pentagon1{
+    -fx-shape: "M 100 100 L 300 100 L 200 300 z";
+    -fx-background-color: black;
+    -fx-border-color: black;
+    -fx-font-weight: bold;
+}
+
+.pentagon1> .text{
+    -fx-rotate: 90;
+}
+
+.output{
+    -fx-border-color: black;
+    -fx-background-color: grey;
+}
+
+.drums{
+    -fx-background-color: black;
+}
+
+.lbl{
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-color: black;
+    
+    
+}
+
+.label_2{
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.border_top{
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: black;
+}
+
+.button{
+   /*-fx-background-color:linear-gradient(to bottom right, #425AD6,#9F72EC)*/
+   
+   -fx-border-color: black;
+   -fx-border-radius: 5;
+   -fx-background-radius: 5;
+}

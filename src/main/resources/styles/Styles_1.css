@@ -1,0 +1,12 @@
+.btn
+{
+    -fx-background-color: #aa0000;
+    -fx-background-radius: 15;
+}
+.btn-drehen
+{
+    -fx-background-radius: 30;
+}
+.combo-box {
+    -fx-font-size: 28;
+}

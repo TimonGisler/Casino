@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pa" onMouseMoved="#mouseMoved" prefHeight="920.0" prefWidth="791.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="slotmachine.FXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="upper_display" layoutX="4.0" layoutY="49.0" prefHeight="346.0" prefWidth="784.0" style="-fx-background-color: darkgreen;">
+         <children>
+            <VBox fx:id="cherry_scale" alignment="CENTER" layoutX="28.0" layoutY="56.0" prefHeight="270.0" prefWidth="90.0">
+               <children>
+                  <Label style="-fx-font-weight: bold;" text="Action" textFill="#f2cb05">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <Label style="-fx-font-weight: bold;" text="100x" textFill="#f2cb05" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <Label style="-fx-font-weight: bold;" text="10x" textFill="#f2cb05" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <Label style="-fx-font-weight: bold;" text="5x" textFill="#f2cb05" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <Label style="-fx-font-weight: bold;" text="5x" textFill="#f2cb05" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="factor" layoutX="677.0" layoutY="56.0" prefHeight="270.0" prefWidth="90.0">
+               <children>
+                  <Label fx:id="fiveX" maxWidth="1.7976931348623157E308" prefHeight="46.0" style="-fx-background-color: #03658C;" styleClass="lbl" stylesheets="@../styles/Pentagon.css" text="5x" textFill="WHITE" VBox.vgrow="SOMETIMES">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="threeX" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="46.0" style="-fx-background-color: #03658C;" styleClass="lbl" stylesheets="@../styles/Pentagon.css" text="3x" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="twoX" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="46.0" style="-fx-background-color: #03658C;" styleClass="lbl" stylesheets="@../styles/Pentagon.css" text="2x" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="zeroX" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="46.0" style="-fx-background-color: #03658C;" styleClass="lbl" stylesheets="@../styles/Pentagon.css" text="0x" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="winX" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="46.0" style="-fx-background-color: #03658C;" styleClass="lbl" stylesheets="@../styles/Pentagon.css" text="WIN" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="pentagon" layoutX="246.0" prefHeight="230.0" prefWidth="253.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="102.0" layoutY="41.0" prefHeight="96.0" prefWidth="138.3" style="-fx-rotate: 72;" styleClass="pentagon1" stylesheets="@../styles/Pentagon.css" text="2x Shuffle" textFill="#575a55" />
+                  <Label alignment="CENTER" layoutX="86.0" layoutY="95.0" prefHeight="96.0" prefWidth="138.3" style="-fx-rotate: 144;" styleClass="pentagon1" stylesheets="@../styles/Pentagon.css" text="10x" textFill="#45275c" />
+                  <Label alignment="CENTER" layoutX="29.0" layoutY="94.0" prefHeight="96.0" prefWidth="138.3" style="-fx-rotate: 216;" styleClass="pentagon1" stylesheets="@../styles/Pentagon.css" text="Cherry &#10;Collect" textFill="#07698d" />
+                  <Label alignment="CENTER" layoutX="11.0" layoutY="41.0" prefHeight="96.0" prefWidth="138.3" style="-fx-rotate: 288;" styleClass="pentagon1" stylesheets="@../styles/Pentagon.css" text="4x &#10;Shuffle" textFill="WHITE" />
+                  <Label alignment="CENTER" layoutX="57.0" layoutY="8.0" prefHeight="96.0" prefWidth="138.3" styleClass="pentagon1" stylesheets="@../styles/Pentagon.css" text="Fruit &#10;Stop" textFill="#73121b" />
+               </children>
+            </AnchorPane>
+            <VBox fx:id="output" layoutX="222.0" layoutY="258.0">
+               <children>
+                  <Label fx:id="output_up" alignment="CENTER" opacity="0.7" prefWidth="300.0" styleClass="output" stylesheets="@../styles/Pentagon.css" text="Label" />
+                  <Label fx:id="output_down" alignment="CENTER" opacity="0.7" prefWidth="300.0" styleClass="output" stylesheets="@../styles/Pentagon.css" text="Label">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="lower_display" layoutX="4.0" layoutY="402.0" prefHeight="410.0" prefWidth="784.0" style="-fx-background-color: darkgreen;">
+         <children>
+            <VBox fx:id="drum" layoutX="55.0" layoutY="29.0">
+               <children>
+                  <HBox fx:id="drums" style="-fx-background-color: white; -fx-border-color: black;">
+                     <children>
+                        <VBox fx:id="vbox_drum1" style="-fx-border-color: black;">
+                           <children>
+                              <ImageView fx:id="imgView1_1" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" />
+                              <ImageView fx:id="imgView1_2" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" style="-fx-image: url('C:/Users/timon/Desktop/P.png');" />
+                              <ImageView fx:id="imgView1_3" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" style="-fx-image: url('C:/Users/timon/Desktop/P.png');" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vbox_drum2" style="-fx-border-color: black;">
+                           <children>
+                              <ImageView fx:id="imgView2_1" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" />
+                              <ImageView fx:id="imgView2_2" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" style="-fx-image: url('C:/Users/timon/Desktop/P.png');" />
+                              <ImageView fx:id="imgView2_3" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" style="-fx-image: url('C:/Users/timon/Desktop/P.png');" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vbox_drum3" style="-fx-border-color: black;">
+                           <children>
+                              <ImageView fx:id="imgView3_1" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" />
+                              <ImageView fx:id="imgView3_2" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" style="-fx-image: url('C:/Users/timon/Desktop/P.png');" />
+                              <ImageView fx:id="imgView3_3" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" style="-fx-image: url('C:/Users/timon/Desktop/P.png');" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vbox_drum4" style="-fx-border-color: black;">
+                           <children>
+                              <ImageView fx:id="imgView4" fitHeight="238.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../styles/pictures/stop.png" />
+                                 </image></ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hold_step">
+                     <children>
+                        <Label fx:id="hold" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #380580;" styleClass="lbl" stylesheets="@../styles/Pentagon.css" text="Hold" textFill="#f5f5f5">
+                           <HBox.margin>
+                              <Insets right="80.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#payOut" prefHeight="35.0" prefWidth="134.0" style="-fx-background-color: red;" text="Pay out" textFill="WHITE" />
+                        <Label fx:id="step" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #380580;" styleClass="lbl" stylesheets="@../styles/Pentagon.css" text="Step" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="wintable" layoutX="654.0" layoutY="29.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/bell.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/bell.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/bell.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="50x" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="20x" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/melon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/melon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/melon.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="10x" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/seven.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/seven.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/seven.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="10x" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/lemon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/lemon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/lemon.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="5x" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/kleeblatt.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/kleeblatt.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/kleeblatt.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="5x" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/orange.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/orange.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/orange.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="2x" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/grape.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/grape.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/grape.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="2x" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="20.0" scaleY="3.0">
+                           <HBox.margin>
+                              <Insets left="5.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Line>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="4x" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="100.0" scaleY="3.0" startX="80.0">
+                           <HBox.margin>
+                              <Insets left="5.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Line>
+                        <Line endX="20.0" scaleY="3.0">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Line>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="2x" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Line endX="100.0" scaleY="3.0" startX="80.0">
+                           <HBox.margin>
+                              <Insets left="5.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Line>
+                        <Line endX="20.0" scaleY="3.0">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Line>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../styles/pictures/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="label_2" stylesheets="@../styles/Pentagon.css" text="2x" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <Line endX="-12.0" layoutX="593.0" layoutY="152.0" scaleY="2.0" startX="-567.0" stroke="#d4af37" />
+            <Label layoutX="551.0" layoutY="126.0" prefHeight="54.0" prefWidth="44.0" text="Win&#10;line" textFill="#d4af37">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox fx:id="buttons" alignment="CENTER" layoutX="7.0" layoutY="822.0">
+         <children>
+            <Button fx:id="mysterie" mnemonicParsing="false" onAction="#mysterie" prefHeight="60.0" prefWidth="110.0" style="-fx-background-color: #380580;" stylesheets="@../styles/Pentagon.css" text="Mysterie" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="bet" mnemonicParsing="false" onAction="#bet" prefHeight="60.0" prefWidth="110.0" style="-fx-background-color: white;" stylesheets="@../styles/Pentagon.css" text="Bet">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <HBox fx:id="moneyHBox">
+               <children>
+                  <Button fx:id="money" mnemonicParsing="false" onAction="#payIn" prefHeight="80.0" prefWidth="220.0" style="-fx-background-color: black; -fx-background-radius: 5 0 0 5;" stylesheets="@../styles/Pentagon.css" text="Pay in: 50" textFill="WHITE" />
+                  <VBox fx:id="plusAndMinus">
+                     <children>
+                        <Button fx:id="plus" mnemonicParsing="false" onAction="#add" prefHeight="40.0" style="-fx-background-color: black; -fx-background-radius: 0 5 0 0; -fx-border-color: grey; -fx-border-width: 0 0 0 1;" text="+" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="minus" mnemonicParsing="false" onAction="#sub" prefHeight="40.0" prefWidth="38.0" style="-fx-background-color: black; -fx-background-radius: 0 0 5 0; -fx-border-color: grey; -fx-border-width: 0 0 0 1;" text="-" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </HBox>
+            <Button fx:id="gamble" mnemonicParsing="false" onAction="#gamble" prefHeight="60.0" prefWidth="110.0" style="-fx-background-color: #F2CB05;" stylesheets="@../styles/Pentagon.css" text="Gamble" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="stop" mnemonicParsing="false" onAction="#start" prefHeight="60.0" prefWidth="110.0" style="-fx-background-color: #802105;" stylesheets="@../styles/Pentagon.css" text="Stop" textFill="WHITE" />
+         </children>
+      </HBox>
+      <HBox fx:id="UserInfo" layoutX="584.0" layoutY="14.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/pictures/seven.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblName" text="Username" />
+               </children>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/pictures/kleeblatt.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblMoney" text="Geld" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Button fx:id="back" layoutX="14.0" layoutY="4.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: black;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

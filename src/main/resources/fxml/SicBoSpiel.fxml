@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="a2" fx:id="pa" onMouseMoved="#Konto" prefHeight="900.0" prefWidth="1500.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SicBo.SicBoSpielController">
+   <children>
+      <GridPane layoutX="35.0" layoutY="38.0" prefHeight="30.0" prefWidth="1401.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="21.0" prefWidth="235.0" text="Total gewettet:" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalBet" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label prefHeight="51.0" prefWidth="282.0" text="Total gewonnen:" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalWin" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label text="Kontostand" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="Kontostand" textFill="WHITE" GridPane.columnIndex="5">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="42.0" layoutY="107.0" prefHeight="171.0" prefWidth="1004.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="101.33332824707031" minHeight="10.0" prefHeight="32.66667175292969" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="186.66665649414062" minHeight="10.0" prefHeight="138.3333282470703" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="21.0" prefWidth="200.0" text="Doubles" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="202.0" text="All Triples" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="208.0" text="Triples" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button id="alltriples" fx:id="allt" mnemonicParsing="false" onAction="#allt" prefHeight="139.0" prefWidth="232.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button id="big" fx:id="big" mnemonicParsing="false" onAction="#big" prefHeight="212.0" prefWidth="238.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="d1" fx:id="d1" mnemonicParsing="false" onAction="#d1" prefHeight="97.0" prefWidth="104.0" stylesheets="@../styles/Styles.css" />
+                  <Button id="d2" fx:id="d2" mnemonicParsing="false" onAction="#d2" prefHeight="70.0" prefWidth="105.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" />
+                  <Button id="d3" fx:id="d3" mnemonicParsing="false" onAction="#d3" prefHeight="91.0" prefWidth="67.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="2" />
+                  <Button id="d5" fx:id="d5" mnemonicParsing="false" onAction="#d5" prefHeight="69.0" prefWidth="96.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button id="d4" fx:id="d4" mnemonicParsing="false" onAction="#d4" prefHeight="91.0" prefWidth="67.0" stylesheets="@../styles/Styles.css" GridPane.rowIndex="1" />
+                  <Button id="d6" fx:id="d6" mnemonicParsing="false" onAction="#d6" prefHeight="69.0" prefWidth="88.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button id="t5" fx:id="t5" mnemonicParsing="false" onAction="#t5" prefHeight="104.0" prefWidth="114.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button id="t1" fx:id="t1" mnemonicParsing="false" onAction="#t1" prefHeight="97.0" prefWidth="93.0" stylesheets="@../styles/Styles.css" />
+                  <Button id="t4" fx:id="t4" mnemonicParsing="false" onAction="#t4" prefHeight="99.0" prefWidth="135.0" stylesheets="@../styles/Styles.css" GridPane.rowIndex="1" />
+                  <Button id="t2" fx:id="t2" mnemonicParsing="false" onAction="#t2" prefHeight="104.0" prefWidth="111.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" />
+                  <Button id="t3" fx:id="t3" mnemonicParsing="false" onAction="#t3" prefHeight="100.0" prefWidth="117.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="2" />
+                  <Button id="t6" fx:id="t6" mnemonicParsing="false" onAction="#t6" prefHeight="113.0" prefWidth="104.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Button id="small" fx:id="small" mnemonicParsing="false" onAction="#small" prefHeight="163.0" prefWidth="245.0" stylesheets="@../styles/Styles.css" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="42.0" layoutY="315.0" prefHeight="104.0" prefWidth="1150.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="39.666656494140625" minHeight="10.0" prefHeight="29.33331298828125" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="74.66668701171875" minHeight="10.0" prefHeight="74.66668701171875" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="27.0" prefWidth="76.0" text="Summen" textFill="WHITE" GridPane.columnIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="sum4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum4" prefHeight="75.0" prefWidth="113.0" styleClass="lol" text="4" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum5" prefHeight="87.0" prefWidth="107.0" styleClass="lol" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum6" prefHeight="78.0" prefWidth="121.0" styleClass="lol" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum7" prefHeight="84.0" prefWidth="127.0" styleClass="lol" text="7" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum8" prefHeight="87.0" prefWidth="131.0" styleClass="lol" text="8" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum9" prefHeight="90.0" prefWidth="145.0" styleClass="lol" text="9" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum10" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum10" prefHeight="88.0" prefWidth="115.0" styleClass="lol" text="10" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum11" prefHeight="80.0" prefWidth="129.0" styleClass="lol" text="11" textFill="WHITE" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum12" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum12" prefHeight="103.0" prefWidth="151.0" styleClass="lol" text="12" textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum13" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum13" prefHeight="90.0" prefWidth="114.0" styleClass="lol" text="13" textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum14" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum14" prefHeight="91.0" prefWidth="135.0" styleClass="lol" text="14" textFill="WHITE" GridPane.columnIndex="10" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum15" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum15" prefHeight="91.0" prefWidth="130.0" styleClass="lol" text="15" textFill="WHITE" GridPane.columnIndex="11" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum16" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum16" prefHeight="104.0" prefWidth="122.0" styleClass="lol" text="16" textFill="WHITE" GridPane.columnIndex="12" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sum17" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sum17" prefHeight="88.0" prefWidth="114.0" styleClass="lol" text="17" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <GridPane layoutX="42.0" layoutY="430.0" prefHeight="209.0" prefWidth="1150.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="112.3333740234375" minHeight="10.0" prefHeight="50.33331298828125" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="234.66665649414062" minHeight="10.0" prefHeight="158.66668701171875" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="74.0" text="Domino" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button id="12" fx:id="do12" mnemonicParsing="false" onAction="#do12" prefHeight="226.0" prefWidth="88.0" GridPane.rowIndex="1" />
+            <Button id="13" fx:id="do13" mnemonicParsing="false" onAction="#do13" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button id="14" fx:id="do14" mnemonicParsing="false" onAction="#do14" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button id="15" fx:id="do15" mnemonicParsing="false" onAction="#do15" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button id="16" fx:id="do16" mnemonicParsing="false" onAction="#do16" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button id="23" fx:id="do23" mnemonicParsing="false" onAction="#do23" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button id="24" fx:id="do24" mnemonicParsing="false" onAction="#do24" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button id="25" fx:id="do25" mnemonicParsing="false" onAction="#do25" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button id="26" fx:id="do26" mnemonicParsing="false" onAction="#do26" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Button id="34" fx:id="do34" mnemonicParsing="false" onAction="#do34" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Button id="35" fx:id="do35" mnemonicParsing="false" onAction="#do35" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+            <Button id="36" fx:id="do36" mnemonicParsing="false" onAction="#do36" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+            <Button id="45" fx:id="do45" mnemonicParsing="false" onAction="#do45" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="12" GridPane.rowIndex="1" />
+            <Button id="46" fx:id="do46" mnemonicParsing="false" onAction="#do46" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+            <Button id="56" fx:id="do56" mnemonicParsing="false" onAction="#do56" prefHeight="226.0" prefWidth="88.0" GridPane.columnIndex="14" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="42.0" layoutY="733.0" prefHeight="56.0" prefWidth="1150.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="448.0" minWidth="10.0" prefWidth="448.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="365.3333435058594" minWidth="10.0" prefWidth="296.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="296.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="69.0" prefWidth="223.0" text="Betrag:" textFill="WHITE">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="betrag" onAction="#betrag" prefHeight="56.0" prefWidth="211.0" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <Button fx:id="wetten" alignment="CENTER" mnemonicParsing="false" onAction="#wetten" prefHeight="68.0" prefWidth="299.0" styleClass="de" stylesheets="@../styles/Styles.css" text="Wetten" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <GridPane GridPane.columnIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="spielv" alignment="CENTER" mnemonicParsing="false" onAction="#spielv" prefHeight="56.0" prefWidth="170.0" styleClass="de" stylesheets="@../styles/Styles.css" text="Spiel verlassen" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="zuruck" alignment="CENTER" mnemonicParsing="false" onAction="#zuruck" prefHeight="56.0" prefWidth="180.0" styleClass="de" stylesheets="@../styles/Styles.css" text="Zurücksetzen">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane layoutX="1095.0" layoutY="67.0" prefHeight="205.0" prefWidth="384.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="78.00000762939453" minHeight="10.0" prefHeight="78.00000762939453" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="171.0" minHeight="10.0" prefHeight="126.99999237060547" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="BOTTOM_CENTER" prefHeight="102.0" prefWidth="128.0" text="Croupier" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Button fx:id="wurfel1" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" GridPane.rowIndex="1" />
+            <Button fx:id="wurfel2" mnemonicParsing="false" prefHeight="175.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="wurfel3" mnemonicParsing="false" prefHeight="156.0" prefWidth="192.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="1204.0" layoutY="340.0" prefHeight="450.0" prefWidth="278.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="10.0" prefWidth="50.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="im1" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="1" />
+            <Label fx:id="im2" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="2" />
+            <Label fx:id="im3" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="3" />
+            <Label fx:id="im4" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="im5" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="im6" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="im7" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="im8" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="im9" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="im10" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="im11" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="im12" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="im13" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="im14" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label fx:id="im15" prefHeight="101.0" prefWidth="95.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label fx:id="runde1" alignment="CENTER" contentDisplay="CENTER" prefHeight="105.0" prefWidth="32.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="runde2" alignment="CENTER" contentDisplay="CENTER" prefHeight="197.0" prefWidth="32.0" textAlignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="runde3" alignment="CENTER" contentDisplay="CENTER" prefHeight="217.0" prefWidth="32.0" textAlignment="CENTER" GridPane.rowIndex="2" />
+            <Label fx:id="runde4" alignment="CENTER" contentDisplay="CENTER" prefHeight="168.0" prefWidth="32.0" textAlignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="runde5" alignment="CENTER" contentDisplay="CENTER" prefHeight="184.0" prefWidth="32.0" textAlignment="CENTER" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1226.0" layoutY="312.0" prefHeight="30.0" prefWidth="254.0" text="History" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="1216.0" layoutY="790.0" mnemonicParsing="false" onAction="#spielRegeln" prefHeight="43.0" prefWidth="254.0" styleClass="linear-grad2" stylesheets="@../styles/Styles.css" text="Spielregeln" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

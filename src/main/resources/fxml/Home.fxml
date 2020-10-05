@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apHome" onMouseMoved="#Konto" prefHeight="900.0" prefWidth="1500.0" scaleShape="false" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Casino.HomeController">
+   <children>
+      <Label id="home" prefHeight="900.0" prefWidth="1500.0" stylesheets="@../styles/Styles.css" />
+      <GridPane prefHeight="900.0" prefWidth="1500.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="487.3333435058594" minHeight="10.0" prefHeight="487.3333435058594" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="443.33331298828125" minHeight="10.0" prefHeight="412.6666564941406" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane prefHeight="395.0" prefWidth="1500.0" GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="391.6666564941406" minHeight="10.0" prefHeight="351.66668701171875" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="BlackJack" fx:id="btnBlackJack" mnemonicParsing="false" onAction="#btnBlackJack" prefHeight="270.0" prefWidth="270.0" styleClass="homebtn" stylesheets="@../styles/Styles.css" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Button>
+                  <Button id="Roulette" fx:id="btnRoulette" mnemonicParsing="false" onAction="#btnRoulette" prefHeight="270.0" prefWidth="270.0" styleClass="homebtn" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" />
+                  <Button id="SicBo" fx:id="btnSicBo" mnemonicParsing="false" onAction="#btnSicBo" prefHeight="270.0" prefWidth="270.0" styleClass="homebtn" stylesheets="@../styles/Styles.css" GridPane.columnIndex="2" />
+                  <Button id="Slot" fx:id="btnSlot" mnemonicParsing="false" onAction="#btnSlot" prefHeight="270.0" prefWidth="270.0" styleClass="homebtn" stylesheets="@../styles/Styles.css" GridPane.columnIndex="3" />
+                  <Button id="Yatzy" fx:id="btnYatzy" mnemonicParsing="false" onAction="#btnYatzy" prefHeight="270.0" prefWidth="270.0" styleClass="homebtn" stylesheets="@../styles/Styles.css" GridPane.columnIndex="4" />
+               </children>
+            </GridPane>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label id="willkommen" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="177.0" prefWidth="750.0" stylesheets="@../styles/Styles.css" text="Willkommen" textFill="WHITE">
+                           <font>
+                              <Font size="96.0" />
+                           </font></Label>
+                        <GridPane GridPane.rowIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="375.0" text="Ihr aktuelles Kontostand:" textFill="WHITE">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="kontostand" alignment="CENTER" prefHeight="21.0" prefWidth="468.0" textFill="WHITE" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <GridPane GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.3333282470703" minWidth="10.0" prefWidth="26.66666603088379" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="363.0" minWidth="10.0" prefWidth="348.3333339691162" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Unser Casino legt grossen Wert auf verantwortungsbewusstes Spielen. Unser Wunsch ist es, unseren Spielern Spass, Unterhaltung und eine angenehme Abwechslung vom Alltag zu bieten." wrappingWidth="717.0041147470474" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </GridPane>
+                              <Button fx:id="btnZuruck" mnemonicParsing="false" onAction="#btnZuruck" prefHeight="46.0" prefWidth="350.0" styleClass="linear-grad2" stylesheets="@../styles/Styles.css" text="Zuruck zum Login" textFill="WHITE" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="239.0" minHeight="10.0" prefHeight="239.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="155.33334350585938" minHeight="10.0" prefHeight="34.666656494140625" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="213.33334350585938" minHeight="10.0" prefHeight="213.33334350585938" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button id="10" fx:id="btn10" alignment="CENTER" mnemonicParsing="false" onAction="#btn10" prefHeight="145.0" prefWidth="145.0" styleClass="homebtn1" stylesheets="@../styles/Styles.css" />
+                        <Button id="20" fx:id="btn20" alignment="CENTER" mnemonicParsing="false" onAction="#btn20" prefHeight="145.0" prefWidth="145.0" styleClass="homebtn1" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" />
+                        <Button id="50" fx:id="btn50" alignment="CENTER" mnemonicParsing="false" onAction="#btn50" prefHeight="145.0" prefWidth="145.0" styleClass="homebtn1" stylesheets="@../styles/Styles.css" GridPane.columnIndex="2" />
+                        <Button id="100" fx:id="btn100" alignment="CENTER" mnemonicParsing="false" onAction="#btn100" prefHeight="145.0" prefWidth="145.0" styleClass="homebtn1" stylesheets="@../styles/Styles.css" GridPane.columnIndex="3" />
+                        <Button id="500" fx:id="btn500" alignment="CENTER" mnemonicParsing="false" onAction="#btn500" prefHeight="145.0" prefWidth="145.0" styleClass="homebtn1" stylesheets="@../styles/Styles.css" GridPane.columnIndex="4" />
+                        <Label text="10$" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label text="20$" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label text="50$" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label text="100$" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label text="500$" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="86.0" prefWidth="120.0" text="Betrag:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="aktBetrag" alignment="CENTER" prefHeight="110.0" prefWidth="131.0" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnEinlosen" mnemonicParsing="false" onAction="#btnEinlosen" prefHeight="47.0" prefWidth="150.0" styleClass="linear-grad2" stylesheets="@../styles/Styles.css" text="Einlösen" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

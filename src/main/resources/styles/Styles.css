@@ -1,0 +1,631 @@
+.btn
+{
+    -fx-background-color: #aa0000;
+    -fx-background-radius: 15;
+}
+.btn-drehen
+{
+    -fx-background-radius: 30;
+}
+.combo-box {
+    -fx-font-size: 28;
+}
+
+#back
+{
+    -fx-background-image: url("blackJack.png");
+}
+
+#back1
+{
+    -fx-background-image: url("ruleBackground.png");
+}
+.btn-drehen
+{
+    -fx-background-radius: 30;
+}
+#btn{
+-fx-background-color: rgb(179, 0, 0);
+-fx-background-radius: 50;
+-fx-border-width: 2;
+-fx-background-color: linear-gradient(from 20% 20% to 100% 100%, black,  red);
+}
+
+#btn:hover
+{
+    -fx-border-color: white;
+ -fx-border-width: 2;
+ -fx-border-radius: 50;
+}
+
+#small
+{
+    -fx-graphic: url("Small.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+    
+}
+#small:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#big
+{
+    -fx-graphic: url("Big.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#big:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#d1
+{
+    -fx-graphic: url("1.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#d1:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#d2
+{
+    -fx-graphic: url("2.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#d2:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#d3
+{
+    -fx-graphic: url("3.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#d3:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#d4
+{
+    -fx-graphic: url("4.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#d4:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#d5
+{   
+    -fx-graphic: url("5.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#d5:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#d6
+{
+    -fx-graphic: url("6.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#d6:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#t1
+{
+    -fx-graphic: url("1.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#t1:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#t2
+{
+    -fx-graphic: url("2.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#t2:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#t3
+{
+    -fx-graphic: url("3.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#t3:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#t4
+{
+    -fx-graphic: url("4.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#t4:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#t5
+{   
+    -fx-graphic: url("5.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#t5:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#t6
+{
+    -fx-graphic: url("6.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#t6:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#alltriples
+{
+   -fx-graphic: url("AllTriples.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#alltriples:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+.lol
+{
+    -fx-background-color: rgb(204, 0, 0);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+.lol:hover
+{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#12{
+    -fx-graphic: url("Do12.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#12:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#13{
+    -fx-graphic: url("Do13.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#13:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#14{
+    -fx-graphic: url("Do14.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#14:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#15{
+    -fx-graphic: url("Do15.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#15:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#16{
+    -fx-graphic: url("Do16.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#16:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#23{
+    -fx-graphic: url("Do23.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#23:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#24{
+    -fx-graphic: url("Do24.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#24:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#25{
+    -fx-graphic: url("Do25.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#25:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#26{
+    -fx-graphic: url("Do26.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#26:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#34{
+    -fx-graphic: url("Do34.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#34:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#35{
+    -fx-graphic: url("Do35.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#35:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#36{
+    -fx-graphic: url("Do36.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#36:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#45{
+    -fx-graphic: url("Do45.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#45:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#46{
+    -fx-graphic: url("Do46.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#46:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+#56{
+    -fx-graphic: url("Do56.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: white;
+}
+#56:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+.de
+{
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-background-color: rgb(51, 153, 51);
+}
+.de:hover{
+    -fx-border-color: rgb(0, 0, 153);
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+}
+
+.w
+{
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+}
+
+#history
+{
+    -fx-background-color: transparent;
+    -fx-border-width: 3px;
+}
+
+#a1
+{
+    -fx-background-image:  url("02_SICBO_012.png");
+    -fx-background-size: 130% 100%; 
+}
+
+#a2
+{
+    -fx-background-image:  url(/styles/ss.jpg);
+    -fx-background-size: 150% 120%; 
+     
+}
+
+#casino{
+    -fx-background-image: url("Cas.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.linear-grad2{
+   -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #000000,  #00802b);
+   -fx-background-radius: 50;
+}
+
+.linear-grad2:hover
+{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-border-color: rgb(255, 255, 255);
+}
+
+#login{
+    -fx-background-image: url("Cas1.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+#log{
+    -fx-text-fill:black;
+    -fx-font-weight:bold;
+}
+
+#logo
+{
+    -fx-background-image: url("Login.png");
+    -fx-background-size: 100% 100%;
+}
+
+#home
+{
+    -fx-background-image: url("Home.jpg");
+    -fx-background-size: 100% 100%;
+    -fx-background-color: black;
+}
+
+.homebtn
+{
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-border-width: 4;
+    -fx-border-color: rgb(0, 0, 0);
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-insets: 0; 
+    -fx-background-color: #006633;
+    -fx-background-position: center;
+}
+
+.homebtn:hover
+{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-border-color: rgb(255, 255, 255);
+}
+
+#BlackJack
+{
+    -fx-background-image: url("BlackJack.jpg");
+    -fx-background-size: 260px 230px;;
+}
+
+#Roulette
+{
+    -fx-background-image: url("Roulette.png");
+}
+
+#SicBo
+{
+    -fx-background-image: url("SicBo.png");
+}
+
+#Slot
+{
+    -fx-background-image: url("Slot.png");
+    -fx-background-size: 260px 230px;
+}
+
+
+#Yatzy
+{
+    -fx-background-image: url("Yatzy.png");
+    -fx-background-size: 250px 150px;
+}
+
+#10
+{
+    -fx-background-image: url("10.png");
+}
+
+#20
+{
+    -fx-background-image: url("20.png");
+}
+
+#50
+{
+    -fx-background-image: url("50.png");
+}
+
+#100
+{
+    -fx-background-image: url("100.png");
+}
+
+#500
+{
+    -fx-background-image: url("500.png");
+}
+
+.homebtn1
+{
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-width: 4;
+    -fx-border-color: rgb(0, 0, 0);
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-insets: 0; 
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+}
+
+.homebtn1:hover
+{
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-color: rgb(255, 255, 255);
+}

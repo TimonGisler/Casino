@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="back1" fx:id="aphome" prefHeight="900.0" prefWidth="1500.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BlackJack.FXMLSpielController">
+   <children>
+      <ImageView fx:id="spielBack" fitHeight="900.0" fitWidth="1500.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="quitButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#quit" prefHeight="31.0" prefWidth="116.0" text="Spiel beenden" />
+      <Label fx:id="kartenGrou" layoutX="56.0" layoutY="131.0" text="Karten Groupier" textFill="WHITE" />
+      <Label fx:id="grouKarte1" layoutX="62.0" layoutY="170.0" text="Karte 1" />
+      <Label fx:id="grouKarte2" layoutX="193.0" layoutY="170.0" text="Karte 2" />
+      <Label fx:id="grouKarte3" layoutX="335.0" layoutY="170.0" text="Karte 3" />
+      <Label fx:id="grouKarte4" layoutX="486.0" layoutY="170.0" text="Karte 4" />
+      <Label fx:id="grouKarte5" layoutX="631.0" layoutY="170.0" text="Karte 5" />
+      <Label fx:id="grouKarte6" layoutX="766.0" layoutY="170.0" text="Karte 6" />
+      <Label fx:id="grouKarte7" layoutX="927.0" layoutY="170.0" text="Karte 7" />
+      <Label fx:id="kontoLabel" layoutX="1283.0" layoutY="140.0" text="Konto:" textFill="WHITE" />
+      <Label fx:id="einsatzLabel" layoutX="1283.0" layoutY="180.0" text="Einsatz:" textFill="WHITE" />
+      <Label fx:id="gewinnLabel" layoutX="1283.0" layoutY="222.0" text="Gewinn:" textFill="WHITE" />
+      <Label fx:id="kartenSpie" layoutX="56.0" layoutY="408.0" text="Ihre Karten" textFill="WHITE" />
+      <Label fx:id="spieKarte1" layoutX="62.0" layoutY="450.0" text="Karte 1" />
+      <Label fx:id="spieKarte2" layoutX="193.0" layoutY="450.0" text="Karte 2" />
+      <Label fx:id="spieKarte3" layoutX="335.0" layoutY="450.0" text="Karte 3" />
+      <Label fx:id="spieKarte4" layoutX="485.0" layoutY="450.0" text="Karte 4" />
+      <Label fx:id="spieKarte5" layoutX="631.0" layoutY="450.0" text="Karte 5" />
+      <Label fx:id="spieKarte6" layoutX="766.0" layoutY="450.0" text="Karte 6" />
+      <Label fx:id="spieKarte7" layoutX="927.0" layoutY="450.0" text="Karte 7" />
+      <Button fx:id="neueKarteButton" layoutX="145.0" layoutY="751.0" mnemonicParsing="false" onAction="#karteZiehen" prefHeight="64.0" prefWidth="173.0" text="Neue Karte ziehen" />
+      <Button fx:id="keineKarteButton" layoutX="359.0" layoutY="751.0" mnemonicParsing="false" onAction="#keineKarte" prefHeight="64.0" prefWidth="173.0" text="Keine Karte ziehen" />
+      <Button fx:id="versichernButton" layoutX="583.0" layoutY="751.0" mnemonicParsing="false" onAction="#versichern" prefHeight="64.0" prefWidth="173.0" text="Versichern" />
+      <Button fx:id="verdoppelnButton" layoutX="813.0" layoutY="751.0" mnemonicParsing="false" onAction="#verdoppeln" prefHeight="64.0" prefWidth="173.0" text="Verdoppeln" />
+      <Button fx:id="einsatzBest" layoutX="1265.0" layoutY="408.0" mnemonicParsing="false" onAction="#setzen" prefHeight="42.0" prefWidth="143.0" styleClass="linear-grad2" stylesheets="@../styles/Styles.css" text="Einsatz bestätigen" textFill="WHITE" />
+      <Label fx:id="fehlerMeldung" layoutX="1226.0" layoutY="473.0" text="Label" textFill="WHITE" />
+      <Label fx:id="geWertGrou" layoutX="1012.0" layoutY="131.0" text="Wert:" textFill="WHITE" />
+      <Label fx:id="geWertSpie" layoutX="1012.0" layoutY="408.0" text="Wert:" textFill="WHITE" />
+      <Label fx:id="resultLabel" layoutX="629.0" layoutY="45.0" text="Sieg / Niederlage" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageLabel" layoutX="289.0" layoutY="690.0" text="message" textFill="WHITE" />
+      <Label fx:id="versichertLabel" layoutX="1283.0" layoutY="259.0" text="Versichert:" textFill="WHITE" />
+      <ComboBox fx:id="chettons" layoutX="1243.0" layoutY="362.0" prefHeight="31.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>

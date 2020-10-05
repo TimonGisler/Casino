@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#konto" prefHeight="900.0" prefWidth="1500.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.roulette.SpielseiteView">
+    <children>
+      <Label alignment="CENTER" layoutX="305.0" layoutY="-4.0" prefHeight="143.0" prefWidth="867.0" text="Roulette" textFill="#e42f2f" underline="true">
+         <font>
+            <Font name="Playbill" size="250.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="450.0" fitWidth="750.0" layoutX="362.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bilder/tisch.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+        <ImageView fx:id="fünfhunderterChip" accessibleRole="BUTTON" fitHeight="100.0" fitWidth="100.0" layoutX="1318.0" layoutY="319.0" onMouseClicked="#fünfhunderterAction">
+            <image>
+                <Image url="@../bilder/schwarz.png" />
+            </image>
+            <effect>
+                <DropShadow>
+               <input>
+                  <Glow />
+               </input></DropShadow>
+            </effect>
+        </ImageView>
+      <ImageView fx:id="zehnerChip" fitHeight="100.0" fitWidth="100.0" layoutX="1138.0" layoutY="220.0" onMouseClicked="#zehnerAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bilder/blau.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <input>
+                  <Glow />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="fünfzigerChip" fitHeight="100.0" fitWidth="100.0" layoutX="1378.0" layoutY="220.0" onMouseClicked="#fünfzigerAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bilder/rot.png" />
+         </image>
+         <effect>
+            <Glow>
+               <input>
+                  <DropShadow />
+               </input>
+            </Glow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="zwanzigerChip" fitHeight="100.0" fitWidth="100.0" layoutX="1258.0" layoutY="220.0" onMouseClicked="#zwanzigerAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bilder/purple.png" />
+         </image>
+         <effect>
+            <Glow>
+               <input>
+                  <DropShadow />
+               </input>
+            </Glow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="1108.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bilder/Geldschein.png" />
+         </image>
+         <effect>
+            <Glow level="0.59">
+               <input>
+                  <DropShadow />
+               </input>
+            </Glow>
+         </effect>
+      </ImageView>
+      <Label layoutX="1218.0" layoutY="28.0" prefHeight="68.0" prefWidth="137.0" text="Konto:">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+      </Label>
+      <Label layoutX="1218.0" layoutY="124.0" prefHeight="68.0" prefWidth="121.0" text="Einsatz:">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="1108.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bilder/jetonsstapel.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <input>
+                  <Glow level="0.42" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Label layoutX="16.0" layoutY="432.0" prefHeight="68.0" prefWidth="149.0" text="Nummer:">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="518.0" prefHeight="68.0" prefWidth="149.0" text="Farbe:">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="feldID" layoutX="166.0" layoutY="432.0" prefHeight="68.0" prefWidth="160.0">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="kontoStandID" layoutX="1347.0" layoutY="28.0" prefHeight="68.0" prefWidth="151.0" text="0">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="einsatzID" layoutX="1347.0" layoutY="124.0" prefHeight="68.0" prefWidth="146.0" text="0">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="farbeID" layoutX="166.0" layoutY="518.0" prefHeight="68.0" prefWidth="160.0">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+      </Label>
+      <Button layoutX="12.0" layoutY="633.0" mnemonicParsing="false" onAction="#drehenAction" prefHeight="112.0" prefWidth="321.0" style="-fx-background-color: #e42f2f;" styleClass="btn-drehen" stylesheets="@../styles/Styles.css" text="DREHEN!">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="16.0" layoutY="16.0" mnemonicParsing="false" onAction="#verlassenAction" prefHeight="148.0" prefWidth="255.0" style="-fx-background-color: #e42f2f;" text="Zur Lobby">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ComboBox fx:id="feldAuswahlID" layoutX="1130.0" layoutY="599.0" onAction="#einsatzHinzufügen" prefHeight="150.0" prefWidth="350.0" promptText="Feld auswählen" style="-fx-background-color: #e42f2f;" styleClass="combo-box" stylesheets="@../styles/Styles.css">
+         <effect>
+            <DropShadow />
+         </effect></ComboBox>
+      <ImageView fx:id="hunderterChip" fitHeight="100.0" fitWidth="100.0" layoutX="1198.0" layoutY="319.0" onMouseClicked="#hunderterAction">
+         <image>
+            <Image url="@../bilder/grün.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <input>
+                  <Glow />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Label fx:id="outcome" layoutX="4.0" layoutY="769.0" prefHeight="112.0" prefWidth="623.0" text="&#10;">
+         <font>
+            <Font name="Playbill" size="60.0" />
+         </font>
+      </Label>
+      <Button layoutX="1129.0" layoutY="451.0" mnemonicParsing="false" onAction="#einsatzLöschen" prefHeight="112.0" prefWidth="355.0" style="-fx-background-color: #e42f2f;" styleClass="btn-drehen" stylesheets="@../styles/Styles.css" text="Einsatz löschen">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="1130.0" layoutY="783.0" prefHeight="62.0" prefWidth="174.0" text="Einsatztotal:">
+         <font>
+            <Font name="Playbill" size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="einsatzTotalID" layoutX="1308.0" layoutY="783.0" prefHeight="62.0" prefWidth="160.0">
+         <font>
+            <Font name="Playbill" size="60.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="185.0" prefHeight="68.0" prefWidth="226.0" text="Benutzername:">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="nutzer" layoutX="245.0" layoutY="185.0" prefHeight="68.0" prefWidth="229.0">
+         <font>
+            <Font name="Playbill" size="66.0" />
+         </font>
+      </Label>
+    </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
